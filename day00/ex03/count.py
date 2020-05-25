@@ -6,7 +6,9 @@ def text_analyzer(*texts):
         punctuation and spaces in a given text.
     """
     if (len(texts) == 0):
-        text = input("What is the text to analyse?\n>>")
+        text = ""
+        while (len(text) == 0):
+            text = input("What is the text to analyse?\n>> ")
     elif (len(texts) > 1):
         print("ERROR")
         return
