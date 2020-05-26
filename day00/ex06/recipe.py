@@ -3,11 +3,11 @@ cookbook = {
         'ingredients': ['ham', 'bread', 'cheese', 'tomatoes'],
         'meal': 'lunch',
         'prep_time': '10'},
-    'cake':{
+    'cake': {
         'ingredients': ['flour', 'sugar', 'eggs'],
         'meal': 'dessert',
         'prep_time': '60'},
-    'salade':{
+    'salade': {
         'ingredients': ['avocado', 'arugula', 'tomatoes', 'spinach'],
         'meal': 'lunch',
         'prep_time': '15'}
@@ -25,22 +25,22 @@ def print_cook():
 
 def print_recipe(name):
     if (name not in cookbook):
-        print ("Recipe does not exist.")
+        print("Recipe does not exist.")
     else:
         recipe = cookbook[name]
         print("\nRecipe for {}:\nIngredients list: {}\nTo be eaten for {}.\n"
-        "Takes {} minutes of cooking.".format(name,
-                                            recipe['ingredients'],
-                                            recipe['meal'],
-                                            recipe['prep_time']))
+              "Takes {} minutes of cooking.".format(name,
+                                                    recipe['ingredients'],
+                                                    recipe['meal'],
+                                                    recipe['prep_time']))
 
 
 def del_recipe(name):
     if (name not in cookbook):
-        print ("Recipe does not exist.")
+        print("Recipe does not exist.")
     else:
         del cookbook[name]
-        print("Recipe of %s deleted" % name)        
+        print("Recipe of %s deleted" % name)
 
 
 def add_recipe(name, ls, meal, time):
@@ -52,13 +52,14 @@ def add_recipe(name, ls, meal, time):
 
 print("Please select an option by typing the corresponding number:")
 print("1: Add a recipe\n2: Delete a recipe\n3: Print a recipe\n"
-        "4: Print the cookbook\n5: Quit")
+      "4: Print the cookbook\n5: Quit")
 
 option = input()
 
 while(option != '5'):
     while (option not in ['1', '2', '3', '4', '5']):
-        print("\nThis option does not exist, please type the corresponding number.")
+        print("\nThis option does not exist, please type the corresponding"
+              "number.")
         print("To exit, enter 5.")
         option = input()
     if (option == '1'):
