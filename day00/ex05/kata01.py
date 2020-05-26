@@ -1,7 +1,7 @@
 languages = {
-'Python': 'Guido van Rossum',
-'Ruby': 'Yukihiro Matsumoto',
-'PHP': 'Rasmus Lerdorf',
+    'Python': 'Guido van Rossum',
+    'Ruby': 'Yukihiro Matsumoto',
+    'PHP': 'Rasmus Lerdorf',
 }
 
 i = 0
