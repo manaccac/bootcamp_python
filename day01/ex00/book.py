@@ -10,7 +10,6 @@ class Book:
         self.creation_data = creation_data
         self.recipes_list = recipes_list
 
-
     def get_recipe_by_name(self, name):
         recipe = Recipe(name, self.recipes_list[name]['cooking_lvl'],
                         self.recipes_list[name]['cooking_time'],
@@ -19,13 +18,11 @@ class Book:
                         self.recipes_list[name]['description'])
         print(str(recipe))
 
-
     def get_recipes_by_types(self, recipe_type):
         print("Recipes for this type: %s" % recipe_type)
         for name in self.recipes_list:
             if (self.recipes_list[name]['recipe_type']):
                 print(name)
-
 
     def add_recipe(self, recipe):
         if (recipe.__class__.__name__ != "Recipe"):
