@@ -1,16 +1,5 @@
-# **************************************************************************** #
-#                                                                              #
-#                                                         :::      ::::::::    #
-#    exec.py                                            :+:      :+:    :+:    #
-#                                                     +:+ +:+         +:+      #
-#    By: manaccac <manaccac@student.42lyon.fr>      +#+  +:+       +#+         #
-#                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2020/05/25 08:44:39 by manaccac          #+#    #+#              #
-#    Updated: 2020/05/25 13:57:31 by manaccac         ###   ########lyon.fr    #
-#                                                                              #
-# **************************************************************************** #
-
 import sys
+
 
 argc = len(sys.argv)
 i = argc - 1
@@ -22,6 +11,6 @@ if (argc > 2):
         res = res.swapcase()
         i = i - 1
         if (i == 0):
-            print (res, end='')
+            print(res, end='')
         else:
-            print (res, end=' ')
+            print(res, end=' ')
