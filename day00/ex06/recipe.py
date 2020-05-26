@@ -28,8 +28,7 @@ def print_recipe(name):
         print ("Recipe does not exist.")
     else:
         recipe = cookbook[name]
-        print (recipe['ingredients'])
-        print("Recipe for {}:\nIngredients list: {}\nTo be eaten for {}.\n"
+        print("\nRecipe for {}:\nIngredients list: {}\nTo be eaten for {}.\n"
         "Takes {} minutes of cooking.".format(name,
                                             recipe['ingredients'],
                                             recipe['meal'],
@@ -59,7 +58,7 @@ option = input()
 
 while(option != '5'):
     while (option not in ['1', '2', '3', '4', '5']):
-        print("This option does not exist, please type the corresponding number.")
+        print("\nThis option does not exist, please type the corresponding number.")
         print("To exit, enter 5.")
         option = input()
     if (option == '1'):
@@ -74,7 +73,7 @@ while(option != '5'):
             if (request == "Yes"):
                 print("Name of new ingredient?")
                 new = input()
-                name.append(new)
+                ls.append(new)
             elif (request == 'No'):
                 break
         print("Enter type of meal")
@@ -87,10 +86,11 @@ while(option != '5'):
         name = input()
         del_recipe(name)
     elif (option == '3'):
-        print("Please enter the recipe's name to get its details:")
+        print("\nPlease enter the recipe's name to get its details:")
         name = input()
         print_recipe(name)
     elif (option == '4'):
         print_cook()
     option = input()
+print("\nCookbook closed.")
 exit()
