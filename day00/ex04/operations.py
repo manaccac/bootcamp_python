@@ -2,7 +2,7 @@ import sys
 import math
 
 
-def     error(i):
+def error(i):
     if (i == 1):
         print("InputError: too many arguments\n")
     elif (i == 2):
