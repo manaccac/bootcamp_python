@@ -1,5 +1,6 @@
 import string
 
+
 def text_analyzer(*texts):
     """
         This function counts the number of upper characters, lower characters,
@@ -30,7 +31,7 @@ def text_analyzer(*texts):
         elif (text[i] in string.punctuation):
             punc += 1
         i = i - 1
-    print ("The text contains", nb_chara, "characters:\n")
+    print("The text contains", nb_chara, "characters:\n")
     print("-", upper, "upper letters\n")
     print("-", lower, "lower letters\n")
     print("-", punc, "punctuation marks\n")
